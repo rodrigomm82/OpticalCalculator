@@ -1,8 +1,11 @@
 # OpticalCalculator
 
-#npm install -g @quasar/cli
+# _npm install -g @quasar/cli_
+Instalação do QuasarCli
 
-npm init quasar create OpticalCalculator
+# _npm init quasar create OpticalCalculator_
+Criação da aplicação
 
-npm install @mdi/font
+# _npm install @mdi/font_
+Instalação do pacote de ícones
 
