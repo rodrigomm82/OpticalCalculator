@@ -13,7 +13,7 @@
         />
 
         <q-toolbar-title>
-          <q-img src="~assets/background/boy-glasses-white.png" width="40px" />
+          <q-img src="~assets/boy-glasses-white.png" width="40px" />
           Optical Calculator
         </q-toolbar-title>
 
