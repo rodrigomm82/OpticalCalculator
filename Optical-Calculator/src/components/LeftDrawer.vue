@@ -30,33 +30,28 @@ import EssentialLink from 'components/EssentialLink'
 const linksList = [
   {
     title: 'Transposition',
-    caption: 'quasar.dev',
     icon: 'mdi-swap-horizontal-bold',
-    link: 'https://quasar.dev'
+    link: '/transposition'
   },
   {
     title: 'Addition',
-    caption: 'github.com/quasarframework',
-    icon: 'code',
-    link: 'https://github.com/quasarframework'
+    icon: 'mdi-eye-plus',
+    link: '/addition'
   },
   {
     title: 'Near',
-    caption: 'chat.quasar.dev',
-    icon: 'chat',
-    link: 'https://chat.quasar.dev'
+    icon: 'mdi-monitor-eye',
+    link: '/near'
   },
   {
     title: 'Diameter',
-    caption: 'forum.quasar.dev',
-    icon: 'record_voice_over',
-    link: 'https://forum.quasar.dev'
+    icon: 'mdi-diameter-variant',
+    link: '/diameter'
   },
   {
     title: 'Edge Thickness',
-    caption: 'forum.quasar.dev',
-    icon: 'record_voice_over',
-    link: 'https://forum.quasar.dev'
+    icon: 'mdi-glasses',
+    link: '/edge-thickness'
   },
 ]
 

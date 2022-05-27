@@ -17,7 +17,8 @@
           Optical Calculator
         </q-toolbar-title>
 
-        <div>Quasar v{{ $q.version }}</div>
+        <help-component/>
+
       </q-toolbar>
     </q-header>
 
@@ -34,11 +35,13 @@
 <script>
 import { defineComponent, ref } from 'vue'
 import LeftDrawer from "components/LeftDrawer";
+import HelpComponent from "components/HelpComponent";
 
 export default defineComponent({
   name: 'MainLayout',
 
   components: {
+    HelpComponent,
     LeftDrawer,
   },
 
