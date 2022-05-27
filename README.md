@@ -1,4 +1,4 @@
-# OpticalCalculator
+### OpticalCalculator
 ´´
 npm install -g @quasar/cli
 ´´
