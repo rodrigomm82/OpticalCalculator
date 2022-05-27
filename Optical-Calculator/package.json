@@ -6,7 +6,9 @@
   "author": "Rodrigo M Moreira <rodrigo.mm82@hotmail.com>",
   "private": true,
   "scripts": {
-    "test": "echo \"No test specified\" && exit 0"
+    "dev": "quasar dev",
+    "build": "quasar build",
+    "build:pwa": "quasar build -m pwa"
   },
   "dependencies": {
     "vue-i18n": "^9.0.0",
