@@ -2,72 +2,70 @@
   <q-drawer
     show-if-above
     bordered
+    class="left-navigation text-white"
   >
-    <q-list
-      class="drawer"
-    >
-      <q-item-label
-        header
-      >
-        Calculations
-      </q-item-label>
-
-      <EssentialLink
-        id="links"
-        v-for="link in essentialLinks"
-        :key="link.title"
-        v-bind="link"
-      />
-    </q-list>
+    <div class="drawer">
+        <q-list >
+          <calculation-links
+            v-for="link in linksList"
+            :key="link.title"
+            v-bind="link"
+            :to="link.to"
+          />
+        </q-list>
+    </div>
   </q-drawer>
 
 </template>
 
 <script>
 import {defineComponent} from 'vue'
-import EssentialLink from 'components/EssentialLink'
-
-const linksList = [
-  {
-    title: 'Transposition',
-    icon: 'mdi-swap-horizontal-bold',
-    link: '/transposition'
-  },
-  {
-    title: 'Addition',
-    icon: 'mdi-eye-plus',
-    link: '/addition'
-  },
-  {
-    title: 'Near',
-    icon: 'mdi-monitor-eye',
-    link: '/near'
-  },
-  {
-    title: 'Diameter',
-    icon: 'mdi-diameter-variant',
-    link: '/diameter'
-  },
-  {
-    title: 'Edge Thickness',
-    icon: 'mdi-glasses',
-    link: '/edge-thickness'
-  },
-]
+import CalculationLinks from 'components/CalculationLinks.vue'
 
 export default defineComponent( {
   name: "LeftDrawer",
 
   components: {
-    EssentialLink
+    CalculationLinks
   },
 
-  setup () {
-
+  data() {
     return {
-      essentialLinks: linksList
+      linksList: [
+        {
+          title: 'Home',
+          icon: 'home',
+          to: '/'
+        },
+        {
+          title: 'Transposition',
+          icon: 'mdi-swap-horizontal-bold',
+          to: '/calculation/transposition'
+        },
+        {
+          title: 'Addition',
+          icon: 'mdi-eye-plus',
+          to: '/calculation/addition'
+        },
+        {
+          title: 'Near',
+          icon: 'mdi-monitor-eye',
+          to: '/calculation/near'
+        },
+        {
+          title: 'Diameter',
+          icon: 'mdi-diameter-variant',
+          to: '/calculation/diameter'
+        },
+        {
+          title: 'Edge Thickness',
+          icon: 'mdi-glasses',
+          to: '/calculation/edge-thickness'
+        },
+      ]
     }
-  }
+
+  },
 })
 </script>
 
@@ -76,7 +74,7 @@ export default defineComponent( {
   background-color: #5ce17a;
   height: 100%;
 }
-#links {
-  color: white;
+.navigation-item {
+  border-radius: 5px;
 }
 </style>
