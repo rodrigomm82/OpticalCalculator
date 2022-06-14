@@ -14,18 +14,20 @@
         >{{ campo.name }}:
         </q-item-label>
       </q-item-section>
-    <q-item-section>
-      <input v-model="campo.ref" :id="campo.name"
-             type="number" :name="campo.name" class="col-md-8 form-control"
-             :min="campo.min" :max="campo.max" :step="campo.step">
-    </q-item-section>
-    </q-item>
 
+      <q-item-section>
+        <input v-model="campo.ref" :id="campo.name"
+               type="number" :name="campo.name" class="col-md-8 form-control"
+               :min="campo.min" :max="campo.max" :step="campo.step">
+      </q-item-section>
+    </q-item>
   </q-page-container>
+
     <q-list  class="flex flex-center q-pq-md">
         <q-item>
-        <q-btn @click="additionCalculate(campos)" label="Calculate" color="primary"/>
+          <q-btn @click="additionCalculate(campos)" label="Calculate" color="primary"/>
         </q-item>
+
         <q-item >
           <q-item-section>
             <q-item-label>Addition</q-item-label>
@@ -94,7 +96,6 @@ export default {
       console.log('Longe: ' + this.spherical)
     }
 
-
   },
 
   computed: {  },
@@ -106,14 +107,12 @@ export default {
     const axis = ref(0)
     const near = ref(0)
 
-
     return {
       spherical,
       cylindrical,
       axis,
       near,
       addition,
-
     }
   }
 }

@@ -58,3 +58,16 @@ a:active {
 }
 
 </style>
+
+<style>
+a:link {
+  color: white;
+}
+a:hover {
+  color: darkblue;
+}
+a:active {
+  color: lightblue;
+}
+
+</style>
