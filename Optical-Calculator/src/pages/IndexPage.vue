@@ -1,17 +1,19 @@
 <template>
   <div class="full-height q-pa-md">
-    <h4 class="text-italic">"Óculos são aquele acessório que atravessa gerações, se transforma e nunca perde sua beleza!"</h4>
-    <h10 style="alignment: right">Caroline Stempniak</h10>
-    <main-image/>
+    <h4 class="text-italic" style="color: #1976d2">"Óculos são aqueles acessórios que atravessam gerações, se transformam e nunca perdem sua beleza!"</h4>
+    <h6 class="float-right">Caroline Stempniak</h6>
+    <img class="flex absolute-bottom-right q-pb-md q-pr-md"
+         alt="Optical Calculator logo"
+         src="~assets/boy-glasses-blue.png"
+         style="width: 300px; height: 300px"
+    >
   </div>
 </template>
 
 <script>
 import { defineComponent } from 'vue'
-import MainImage from "components/MainImage";
 
 export default defineComponent({
   name: 'IndexPage',
-  components: {MainImage}
 })
 </script>
