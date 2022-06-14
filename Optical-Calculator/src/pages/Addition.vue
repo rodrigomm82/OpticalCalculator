@@ -4,28 +4,28 @@
   </h4>
 
   <q-page-container class="flex flex-left">
-    <q-item v-model="campo.ref"
-        v-for="campo in campos"
-        :key="campo.name"
+    <q-item v-model="field.ref"
+        v-for="field in fields"
+        :key="field.name"
     >
       <q-item-section>
         <q-item-label
-          :style="'color:' + campo.color" class="col-md-4 control-label"
-        >{{ campo.name }}:
+          :style="'color:' + field.color" class="col-md-4 control-label"
+        >{{ field.name }}:
         </q-item-label>
       </q-item-section>
 
       <q-item-section>
-        <input v-model="campo.ref" :id="campo.name"
-               type="number" :name="campo.name" class="col-md-8 form-control"
-               :min="campo.min" :max="campo.max" :step="campo.step">
+        <input v-model="field.ref" :id="field.name"
+               type="number" :name="field.name" class="col-md-8 form-control"
+               :min="field.min" :max="field.max" :step="field.step">
       </q-item-section>
     </q-item>
   </q-page-container>
 
     <q-list  class="flex flex-center q-pq-md">
         <q-item>
-          <q-btn @click="additionCalculate(campos)" label="Calculate" color="primary"/>
+          <q-btn @click="additionCalculate(fields)" label="Calculate" color="primary"/>
         </q-item>
 
         <q-item >
@@ -44,11 +44,9 @@ import { ref } from 'vue'
 export default {
   name: "Addition",
 
-
-
   data () {
     return {
-      campos: [
+      fields: [
         {
           name: 'Spherical',
           ref: this.spherical.toFixed(2),
@@ -67,7 +65,7 @@ export default {
         },
         {
           name: 'Axis',
-          ref: this.axis + '°',
+          ref: 0,
           max: 180,
           min: 0,
           step: 1,
@@ -87,9 +85,9 @@ export default {
 
   methods: {
 
-    additionCalculate(campos) {
-      this.spherical = campos[0].ref.valueOf()
-      this.near = campos[3].ref.valueOf()
+    additionCalculate(field) {
+      this.spherical = field[0].ref.valueOf()
+      this.near = field[3].ref.valueOf()
       this.addition = (this.near - this.spherical)
       console.log('Adição: ' + this.addition)
       console.log('Perto: ' + this.near)
