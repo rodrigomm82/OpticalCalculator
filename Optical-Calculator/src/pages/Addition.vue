@@ -1,8 +1,13 @@
 <template>
-  <h4 class="q-pa-md flex flex-center">
-    Addition
-  </h4>
-
+    <h4 class="q-px-lg flex flex-center">
+      Addition
+    </h4>
+    <p class="q-px-lg flex flex-center">
+      Known as tired view, presbyopia means that the customer needs different degrees to see correctly.
+    </p>
+<!--
+    <p>Conhecido como vista cansada, a presbiopia significa que o cliente precisa de graus diferentes para enxergar corretamente</p>
+-->
   <q-page-container class="flex flex-left">
     <q-item v-model="field.ref"
         v-for="field in fields"

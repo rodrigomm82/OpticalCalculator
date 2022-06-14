@@ -1,13 +1,15 @@
 <template>
-  <div class="q-pa-lg flex flex-center">
-    <h4>
+    <h4 class="q-px-lg flex flex-center">
       Transposition
     </h4>
-    <p class="q-px-lg">Transposition is the change of numbers and signals without changing the diopthic value of the lens. Every cylindrical lens, combined or toric, has two ways of being read or prescribed. One with the positive cylindrical and the other with the negative cylindrical.</p>
+    <p class="q-px-lg flex flex-center">
+      Transposition is the change of numbers and signals without changing the diopthic value of the lens.
+      Every cylindrical lens, combined or toric, has two ways of being read or prescribed. One with the positive
+      cylindrical and the other with the negative cylindrical.
+    </p>
 <!--
     <p>A transposição é a mudança de números e sinais sem alterar o valor dióptrico da lente. Toda lente cilíndrica, combinada ou tórica, possui duas formas de serem lidas ou prescritas. Uma com o cilíndrico positivo e outra com o cilíndrico negativo.</p>
 -->
-  </div>
 
     <q-page-container class="flex flex-left">
       <q-item v-model="field.ref"
