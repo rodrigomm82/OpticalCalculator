@@ -27,7 +27,13 @@
     />
 
     <q-page-container>
-      <router-view />
+      <q-page>
+        <div class="col">
+          <div class="full-height">
+            <router-view/>
+          </div>
+        </div>
+      </q-page>
     </q-page-container>
   </q-layout>
 </template>
