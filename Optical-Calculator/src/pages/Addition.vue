@@ -1,54 +1,39 @@
 <template>
-    <h4 class="q-px-lg flex flex-center">
-      Addition
-    </h4>
-    <p class="q-px-lg flex flex-center">
-      Known as tired view, presbyopia means that the customer needs different degrees to see correctly.
-    </p>
-<!--
-    <p>Conhecido como vista cansada, a presbiopia significa que o cliente precisa de graus diferentes para enxergar corretamente</p>
--->
-  <q-page-container class="flex flex-left">
-    <q-item v-model="field.ref"
-        v-for="field in fields"
-        :key="field.name"
-    >
-      <q-item-section>
-        <q-item-label
-          :style="'color:' + field.color" class="col-md-4 control-label"
-        >{{ field.name }}:
-        </q-item-label>
-      </q-item-section>
+  <calculation-header
+    :title=this.title
+    :description=this.description
+  />
 
-      <q-item-section>
-        <input v-model="field.ref" :id="field.name"
-               type="number" :name="field.name" class="col-md-8 form-control"
-               :min="field.min" :max="field.max" :step="field.step">
-      </q-item-section>
-    </q-item>
-  </q-page-container>
+  <calculation-body
+    :fields="fields"
+  />
 
     <q-list  class="flex flex-center q-pq-md">
         <q-item>
           <q-btn @click="additionCalculate(fields)" label="Calculate" color="primary"/>
         </q-item>
 
-        <q-item >
-          <q-item-section>
-            <q-item-label>Addition</q-item-label>
-            <q-item-label>{{ this.addition.toFixed(2) }}</q-item-label>
-          </q-item-section>
-        </q-item>
+      <q-field outlined  stack-label>
+        <template v-slot:control>
+          <q-item-label>{{ title }}</q-item-label>
+          <div class="self-center full-width no-outline" tabindex="0">
+            {{ this.addition.toFixed(2) }}
+          </div>
+        </template>
+      </q-field>
+
     </q-list>
 
 </template>
 
 <script>
 import { ref } from 'vue'
+import CalculationHeader from "components/CalculationHeader";
+import CalculationBody from "components/CalculationBody";
 
 export default {
   name: "Addition",
-
+  components: {CalculationBody, CalculationHeader},
   data () {
     return {
       fields: [
@@ -84,7 +69,9 @@ export default {
           step: 0.25,
           color: 'orange'
         }
-      ]
+      ],
+      title: 'Addition',
+      description: 'Known as tired view, presbyopia means that the customer needs different degrees to see correctly'
     }
   },
 
