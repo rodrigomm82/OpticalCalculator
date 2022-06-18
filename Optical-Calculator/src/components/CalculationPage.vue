@@ -9,29 +9,27 @@
       <q-btn @click="calculationButton(fields)" label="Calculate" color="primary"/>
     </q-item>
 
-    <q-field v-if="this.title === 'Addition'" outlined  stack-label>
-      <template v-slot:control>
-        <q-item-label>{{ title }}</q-item-label>
-        <div class="self-center full-width no-outline" tabindex="0">
-          {{ this.addition.toFixed(2) }}
-        </div>
-      </template>
-    </q-field>
+    <calculation-result
+      :title="title"
+      :field="title === 'Addition'? this.addition : this.near"
+    />
   </q-list>
 
 </template>
 
 <script>
 import {ref} from 'vue'
-  import CalculationHeader from "components/CalculationHeader";
-  import CalculationBody from "components/CalculationBody";
+import CalculationHeader from 'components/CalculationHeader'
+import CalculationBody from 'components/CalculationBody'
+import CalculationResult from 'components/CalculationResult'
 
 export default {
   name: "CalculationPage",
 
   components: {
+    CalculationResult,
     CalculationBody,
-    CalculationHeader
+    CalculationHeader,
   },
 
   props: {
@@ -42,28 +40,18 @@ export default {
 
   methods: {
     calculationButton: function (field) {
-      console.log("iniciou")
+      this.parameterReceipt(field)
 
-      if (this.title === 'Transposition') {
-        console.log("transposição")
-        this.transpositionCalculate(field)
-      }
-      if (this.title === 'Addition') {
-        console.log("addition")
-        this.additionCalculate(field)
-      }
+      if (this.title === 'Transposition') this.transpositionCalculate(field)
+      if (this.title === 'Addition') this.additionCalculate()
+      if (this.title === 'Near') this.nearCalculate()
     },
 
     transpositionCalculate: function(field) {
-      console.time('tempo')
-      this.parameterReceipt(field);
-
       if (this.cylindrical > 0) {
         this.calculationOfTransposition()
         this.sendingParameter(field)
-        console.log('terminou')
       }
-      console.timeEnd('tempo')
     },
 
     parameterReceipt: function (field) {
@@ -71,9 +59,8 @@ export default {
       this.cylindrical = field[1].ref.valueOf()
       this.axis = field[2].ref.valueOf()
 
-      if (this.title === 'Addition') {
-        this.near = field[3].ref.valueOf()
-      }
+      if (this.title === 'Addition') this.near = field[3].ref.valueOf()
+      if (this.title === 'Near') this.addition = field[3].ref.valueOf()
     },
 
     sendingParameter: function (field) {
@@ -88,27 +75,15 @@ export default {
 
       if (this.axis >= 90) this.axis -= 90
       else this.axis += 90
-
-      console.log('calculou')
-      console.log(this.spherical)
-      console.log(this.cylindrical)
-      console.log(this.axis)
     },
 
-
-    additionCalculate(field) {
-      this.parameterReceipt(field);
-      this.calculationOfAddition();
-      console.log('Adição: ' + this.addition)
-      console.log('Perto: ' + this.near)
-      console.log('Longe: ' + this.spherical)
-    },
-
-    calculationOfAddition: function () {
-      console.log('calculou')
+    additionCalculate() {
       this.addition = (this.near - this.spherical)
     },
 
+    nearCalculate: function () {
+      this.near = (this.addition + this.spherical)
+    }
   },
 
   setup () {

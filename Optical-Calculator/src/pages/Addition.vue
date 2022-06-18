@@ -26,7 +26,8 @@ export default {
     ])
 
     const title = 'Addition'
-    const  description = 'Known as tired view, presbyopia means that the customer needs different degrees to see correctly'
+    const  description = 'Known as tired vision, presbyopia means that the customer needs different degrees to see ' +
+      'correctly. The Addition, is what we need to add in the degree by far in these cases.'
 
     return {
       fields, title, description

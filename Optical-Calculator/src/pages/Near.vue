@@ -26,7 +26,8 @@ export default {
     ])
 
     const title = 'Near'
-    const  description = 'Known as tired view, presbyopia means that the customer needs different degrees to see correctly'
+    const  description = 'Known as tired vision, presbyopia means that the customer needs different degrees to see' +
+      ' correctly. The degree of Near, is what we need to see at approximately 35 cm.'
 
     return {
       fields, title, description
