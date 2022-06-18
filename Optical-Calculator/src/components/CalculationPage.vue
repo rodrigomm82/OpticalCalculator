@@ -10,6 +10,7 @@
     </q-item>
 
     <calculation-result
+      v-if="title !== 'Transposition'"
       :title="title"
       :field="title === 'Addition'? this.addition : this.near"
     />
