@@ -2,7 +2,7 @@
 
   <calculation-header :title="title" :description="description"/>
 
-  <calculation-body :fields="fields"/>
+  <calculation-body :title="title" :fields="fields"/>
 
   <q-list  class="flex flex-center q-pq-md">
     <q-item>
