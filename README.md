@@ -1,4 +1,4 @@
-### OpticalCalculator
+# OpticalCalculator
 
 _npm install -g @quasar/cli_
 Instalação do QuasarCli
