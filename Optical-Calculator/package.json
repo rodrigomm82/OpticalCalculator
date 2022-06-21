@@ -4,7 +4,7 @@
   "description": "Facilitator calculator for the day to day of an optical store",
   "productName": "Optical Calculator",
   "author": "Rodrigo M Moreira <rodrigo.mm82@hotmail.com>",
-  "private": false,
+  "private": true,
   "scripts": {
     "dev": "quasar dev",
     "build": "quasar build"
