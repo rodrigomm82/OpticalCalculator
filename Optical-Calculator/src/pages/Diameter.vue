@@ -22,33 +22,6 @@ export default {
       {name: 'Naso-Pupillary Distance', ref: 5, max: 80,  min: 5, step: 1, color: 'gray'}
     ])
 
-    /*const fields = [
-      {
-        eye: [
-          {
-            name:'Right Eye',
-            elements: [
-              {name: 'Width', ref: 10, max: 80,  min: 10, step: 1, color: 'green'},
-              {name: 'Height', ref: 10, max: 80,  min: 10, step: 1, color: 'blue'},
-              {name: 'Large Diagonal', ref: 10, max: 80,  min: 10, step: 1, color: 'red'},
-              {name: 'Bridge', ref: 10, max: 80,  min: 10, step: 1, color: 'orange'},
-              {name: 'Naso Pupillary Distance', ref: 10, max: 80,  min: 10, step: 1, color: 'orange'},
-            ]
-          },
-          {
-            name:'Left Eye',
-            elements: [
-              {name: 'Width', ref: 10, max: 80,  min: 10, step: 1, color: 'green'},
-              {name: 'Height', ref: 10, max: 80,  min: 10, step: 1, color: 'blue'},
-              {name: 'Large Diagonal', ref: 10, max: 80,  min: 10, step: 1, color: 'red'},
-              {name: 'Bridge', ref: 10, max: 80,  min: 10, step: 1, color: 'orange'},
-              {name: 'Naso Pupillary Distance', ref: 10, max: 80,  min: 10, step: 1, color: 'orange'},
-            ]
-          }
-
-        ]
-      },
-    ]*/
     const title = 'Diameter'
     const description = ''
 

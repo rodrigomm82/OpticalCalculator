@@ -2,27 +2,30 @@
 
   <calculation-header :title="title" :description="description"/>
 
-  <calculation-body :title="title" :fields="fields"/>
+    <q-card class="q-mx-xl q-py-md" bordered>
 
-  <q-list  class="flex flex-center q-pq-md">
-    <q-item>
-      <q-btn @click="calculationButton(fields)" label="Calculate" color="primary"/>
-    </q-item>
+      <calculation-body :fields="fields"/>
 
-    <div v-if="title !== 'Transposition'">
-      <calculation-result
-        v-if="title !== 'Diameter'"
-        :title="title"
-        :field="title === 'Addition'? this.addition : this.near"
-      />
-      <calculation-result
-        v-else
-        :title="title"
-        :field=this.diameter
-      />
-    </div>
-  </q-list>
+      <q-list class="flex flex-center q-pq-md">
+        <q-item>
+          <q-btn v-if="btnValidity > 0" disable label="Calculate" color="primary"/>
+          <q-btn v-else @click="calculationButton(fields)" label="Calculate" color="primary"/>
+        </q-item>
 
+        <div v-if="title !== 'Transposition'">
+          <calculation-result
+            v-if="title !== 'Diameter'"
+            :title="title"
+            :field="title === 'Addition'? this.addition : this.near"
+          />
+          <calculation-result
+            v-else
+            :title="title"
+            :field=this.diameter
+          />
+        </div>
+      </q-list>
+    </q-card>
 </template>
 
 <script>
@@ -45,6 +48,16 @@ export default {
     title: String,
     description: String,
     fields: Object
+  },
+
+  computed: {
+    btnValidity: function () {
+      let count = 0
+      this.fields.forEach(function (f) {
+        if (f.ref % f.step !== 0 || f.ref > f.max || f.ref < f.min) count++
+      })
+      return count
+    }
   },
 
   methods: {
@@ -115,7 +128,6 @@ export default {
     const near = ref(0)
     const addition = ref(0)
     const width = ref(0)
-    //const height = ref(0)
     const largeDiagonal = ref(0)
     const bridge = ref(0)
     const nasoPupillaryDistance = ref(0)

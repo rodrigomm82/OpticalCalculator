@@ -1,11 +1,10 @@
 <template>
-  <h4 class="q-px-lg flex flex-center">
+  <h4 class="q-mb-lg flex flex-center">
     {{ this.title }}
   </h4>
-  <p class="q-px-lg flex flex-center">
+  <p class="q-ma-lg q-px-lg flex flex-center" style="text-align: justify">
     {{ this.description }}
   </p>
-
 </template>
 
 <script>
