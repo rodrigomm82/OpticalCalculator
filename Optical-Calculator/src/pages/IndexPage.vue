@@ -1,7 +1,7 @@
 <template>
   <section class="full-height q-pa-md">
     <h6 class="text-italic" style="color: #1976d2; text-align: justify">{{ this.content }}</h6>
-    <p class="float-right">{{ this.author }}</p>
+    <p class="float-right">- {{ this.author }}</p>
   </section>
   <section>
     <img class="flex absolute-bottom-right q-pb-md q-pr-md"
@@ -19,8 +19,8 @@ export default defineComponent({
   name: 'IndexPage',
 
   setup() {
-    const author = 'Caroline Stempniak'
-    const content = '"Óculos são aqueles acessórios que atravessam gerações, se transformam e nunca perdem sua beleza!"'
+    const author = 'Jô Soares'
+    const content = '"A prova de que a natureza é sábia é que ela nem sabia que iríamos usar óculos e notem como colocou nossas orelhas!"'
 
     return { author, content }
   }
