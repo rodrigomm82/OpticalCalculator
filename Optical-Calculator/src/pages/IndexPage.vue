@@ -1,6 +1,6 @@
 <template>
   <section class="full-height q-pa-md">
-    <h5 class="text-italic" style="color: #1976d2; text-align: justify">{{ this.content }}</h5>
+    <h6 class="text-italic" style="color: #1976d2; text-align: justify">{{ this.content }}</h6>
     <p class="float-right">{{ this.author }}</p>
   </section>
   <section>
