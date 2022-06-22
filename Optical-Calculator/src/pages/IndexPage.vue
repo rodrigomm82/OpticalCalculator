@@ -20,7 +20,8 @@ export default defineComponent({
 
   setup() {
     const author = 'Jô Soares'
-    const content = '"A prova de que a natureza é sábia é que ela nem sabia que iríamos usar óculos e notem como colocou nossas orelhas!"'
+    const content = '"A prova de que a natureza é sábia é que ela nem sabia que iríamos usar óculos e notem como' +
+      ' colocou nossas orelhas!"'
 
     return { author, content }
   }

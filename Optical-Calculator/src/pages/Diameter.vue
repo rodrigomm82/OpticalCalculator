@@ -7,26 +7,23 @@
 </template>
 
 <script>
-import CalculationPage from "components/CalculationPage";
-import {ref} from "vue";
+import CalculationPage from 'components/CalculationPage'
 export default {
-    name: "Diameter",
+    name: 'Diameter',
 
   components: {CalculationPage},
 
-  setup() {
-    const fields = ref([
-      {name: 'Width', ref: 10, max: 80,  min: 10, step: 1, color: 'green'},
-      {name: 'Large Diagonal', ref: 10, max: 80,  min: 10, step: 1, color: 'red'},
-      {name: 'Bridge', ref: 10, max: 80,  min: 10, step: 1, color: 'orange'},
-      {name: 'Naso-Pupillary Distance', ref: 5, max: 80,  min: 5, step: 1, color: 'gray'}
-    ])
-
-    const title = 'Diameter'
-    const description = ''
-
+  data() {
     return {
-      title, description, fields
+      fields: [
+        {name: this.$t('width'), ref: 10, max: 80,  min: 10, step: 1, color: 'green'},
+        {name: this.$t('largeDiagonal'), ref: 10, max: 80,  min: 10, step: 1, color: 'red'},
+        {name: this.$t('bridge'), ref: 10, max: 80,  min: 10, step: 1, color: 'orange'},
+        {name: this.$t('nasoPupillaryDistance'), ref: 5, max: 80,  min: 5, step: 1, color: 'gray'}
+      ],
+
+      title: this.$t('diameter'),
+      description: ''
     }
   },
 }

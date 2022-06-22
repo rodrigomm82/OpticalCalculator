@@ -8,15 +8,15 @@
 
       <q-list class="flex flex-center q-pq-md">
         <q-item>
-          <q-btn v-if="btnValidity > 0" disable label="Calculate" color="primary"/>
-          <q-btn v-else @click="calculationButton(fields)" label="Calculate" color="primary"/>
+          <q-btn v-if="btnValidity > 0" disable :label="$t('calculate')" color="primary"/>
+          <q-btn v-else @click="calculationButton(fields)" :label="$t('calculate')" color="primary"/>
         </q-item>
 
-        <div v-if="title !== 'Transposition'">
+        <div v-if="title !== this.$t('transposition')">
           <calculation-result
-            v-if="title !== 'Diameter'"
+            v-if="title !== this.$t('diameter')"
             :title="title"
-            :field="title === 'Addition'? this.addition : this.near"
+            :field="title === this.$t('addition')? this.addition : this.near"
           />
           <calculation-result
             v-else
@@ -64,10 +64,10 @@ export default {
     calculationButton: function (field) {
       this.parameterReceipt(field)
 
-      if (this.title === 'Transposition') this.transpositionCalculate(field)
-      if (this.title === 'Addition') this.additionCalculate()
-      if (this.title === 'Near') this.nearCalculate()
-      if (this.title === 'Diameter') this.diameterCalculate()
+      if (this.title === this.$t('transposition')) this.transpositionCalculate(field)
+      if (this.title === this.$t('addition')) this.additionCalculate()
+      if (this.title === this.$t('near')) this.nearCalculate()
+      if (this.title === this.$t('diameter')) this.diameterCalculate()
     },
 
     transpositionCalculate: function(field) {
@@ -86,18 +86,19 @@ export default {
     },
 
     diameterCalculate: function () {
-      this.diameter = (((this.bridge + this.width + this.largeDiagonal) - (this.nasoPupillaryDistance * 2)) + tolerance)
-      console.log('diameter ' + this.diameter)
+      this.diameter = (((this.bridge + this.width + this.largeDiagonal)
+        - (this.nasoPupillaryDistance * 2)) + tolerance)
+      console.log(this.$t('diameter') + ' ' + this.diameter)
     },
 
     parameterReceipt: function (field) {
-      if(this.title !== 'Diameter'){
+      if(this.title !== this.$t('diameter')){
         this.spherical = field[0].ref.valueOf()
         this.cylindrical = field[1].ref.valueOf()
         this.axis = field[2].ref.valueOf()
 
-        if (this.title === 'Addition') this.near = field[3].ref.valueOf()
-        if (this.title === 'Near') this.addition = field[3].ref.valueOf()
+        if (this.title === this.$t('addition')) this.near = field[3].ref.valueOf()
+        if (this.title === this.$t('near')) this.addition = field[3].ref.valueOf()
       } else {
         this.width = field[0].ref.valueOf()
         this.largeDiagonal = field[1].ref.valueOf()

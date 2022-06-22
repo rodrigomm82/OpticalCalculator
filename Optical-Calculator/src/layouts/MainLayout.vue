@@ -19,6 +19,8 @@
 
         <help-component/>
 
+        <div id="time"></div>
+
       </q-toolbar>
     </q-header>
 
@@ -42,6 +44,17 @@
 import { defineComponent, ref } from 'vue'
 import LeftDrawer from "components/LeftDrawer";
 import HelpComponent from "components/HelpComponent";
+
+const zeroFill = n => {
+  return ('0' + n).slice(-2);
+}
+
+const interval = setInterval(() => {
+  const now = new Date();
+  document.getElementById('time').innerHTML = zeroFill(now.getUTCDate()) + '/' + zeroFill((now.getMonth()
+      + 1)) + '/' + now.getFullYear() + ' ' + zeroFill(now.getHours()) + ':' + zeroFill(now.getMinutes()) + ':' +
+    zeroFill(now.getSeconds());
+}, 1000);
 
 export default defineComponent({
   name: 'MainLayout',

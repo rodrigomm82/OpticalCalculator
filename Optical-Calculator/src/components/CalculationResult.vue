@@ -1,5 +1,5 @@
 <template>
-  <q-field v-if="this.title === 'Addition' || 'Near'" outlined  stack-label>
+  <q-field v-if="this.title === this.$t('addition') || this.$t('near')" outlined  stack-label>
     <template v-slot:control>
       <q-item-label>{{ title }}</q-item-label>
       <div class="self-center full-width no-outline" tabindex="0">
@@ -22,5 +22,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>

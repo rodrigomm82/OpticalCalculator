@@ -33,35 +33,35 @@ export default defineComponent( {
     return {
       linksList: [
         {
-          title: 'Home',
+          title: this.$t('home'),
           icon: 'home',
           to: '/'
         },
         {
-          title: 'Transposition',
+          title: this.$t('transposition'),
           icon: 'mdi-swap-horizontal-bold',
           to: '/calculation/transposition'
         },
         {
-          title: 'Addition',
+          title: this.$t('addition'),
           icon: 'mdi-eye-plus',
           to: '/calculation/addition'
         },
         {
-          title: 'Near',
+          title: this.$t('near'),
           icon: 'mdi-monitor-eye',
           to: '/calculation/near'
         },
         {
-          title: 'Diameter',
+          title: this.$t('diameter'),
           icon: 'mdi-diameter-variant',
           to: '/calculation/diameter'
         },
-        {
-          title: 'Edge Thickness',
+        /*{
+          title: this.$t('edgeThickness'),
           icon: 'mdi-glasses',
           to: '/calculation/edge-thickness'
-        },
+        },*/
       ]
     }
 
@@ -73,8 +73,5 @@ export default defineComponent( {
 .drawer {
   background-color: #5ce17a;
   height: 100%;
-}
-.navigation-item {
-  border-radius: 5px;
 }
 </style>

@@ -1,27 +1,24 @@
 <template>
   <div class="q-gutter-md row">
-
     <q-btn-dropdown
-      label="Help"
+      :label="this.$t('help')"
       icon="mdi-help"
       flat
       dense
     >
       <q-card-section>
-        <h5 class="text-body2">Desenvolvedor:<br>Rodrigo Moreira</h5>
-        <h4 class="text-body2">Quasar - {{ $q.version }}</h4>
+        <h4 class="text-body2">{{ this.$t('developer') }}:<br>Rodrigo Moreira</h4>
+        <h4 class="text-body2">Quasar - v{{ $q.version }}</h4>
       </q-card-section>
-
     </q-btn-dropdown>
   </div>
 </template>
 
 <script>
 export default {
-  name: "HelpComponent"
+  name: "HelpComponent",
 }
 </script>
 
 <style scoped>
-
 </style>
