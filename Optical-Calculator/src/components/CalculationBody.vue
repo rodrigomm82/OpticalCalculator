@@ -28,7 +28,8 @@ export default {
   name: "CalculationBody",
 
   props: {
-    fields: [Object, String]
+    fields: [Object, String],
+    image: [Object, String]
   }
 }
 </script>

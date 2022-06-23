@@ -3,9 +3,11 @@
 export default {
   failed: 'Ação falhou',
   success: 'Ação realizada',
+  404: 'Opa, não há nada aqui...',
+  opticalCalculator: 'Calculadora Óptica',
 
   // Menu
-  home: 'Home',
+  home: 'Página Inicial',
   transposition: 'Transposição',
   addition: 'Adição',
   near: 'Perto',
@@ -17,10 +19,10 @@ export default {
   spherical: 'Esférico',
   cylindrical: 'Cilíndrico',
   axis: 'Eixo',
-  width: 'Horizontal',
-  largeDiagonal: 'Diagonal Maior',
-  bridge: 'Ponte',
-  nasoPupillaryDistance: 'DNP',
+  width: 'Horizontal (mm)',
+  largeDiagonal: 'Diagonal Maior (mm)',
+  bridge: 'Ponte (mm)',
+  nasoPupillaryDistance: 'DNP (mm)',
 
 
   // Descrições/Descriptions
@@ -34,8 +36,9 @@ export default {
   diameterDescription: '',
   edgeThicknessDescription: '',
 
-  // Ajuda/Help
-  help: 'Ajuda',
+  // Sobre/About
+  language: 'Idioma',
+  about: 'Sobre',
   developer: 'Desenvolvedor',
 
   // Meses/Months

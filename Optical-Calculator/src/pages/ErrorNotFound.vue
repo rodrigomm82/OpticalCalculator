@@ -6,7 +6,7 @@
       </div>
 
       <div class="text-h2" style="opacity:.4">
-        Oops. Nothing here...
+        {{ this.$t('404') }}
       </div>
 
       <q-btn
@@ -15,8 +15,13 @@
         text-color="blue"
         unelevated
         to="/"
-        label="Go Home"
+        :label="this.$t('home')"
         no-caps
+      />
+      <img class="flex absolute-bottom-right q-pb-md q-pr-md"
+           alt="Optical Calculator logo"
+           src="~assets/boy-glasses-blue-white.png"
+           style="max-width: 30vw; max-height: 30vh"
       />
     </div>
   </div>

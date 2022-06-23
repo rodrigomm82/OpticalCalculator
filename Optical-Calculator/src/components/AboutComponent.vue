@@ -1,8 +1,8 @@
 <template>
   <div class="q-gutter-md row">
     <q-btn-dropdown
-      :label="this.$t('help')"
-      icon="mdi-help"
+      :label="this.$t('about')"
+
       flat
       dense
     >
@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  name: "HelpComponent",
+  name: "AboutComponent",
 }
 </script>
 

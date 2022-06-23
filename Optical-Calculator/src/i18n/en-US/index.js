@@ -3,9 +3,11 @@
 export default {
   failed: 'Action failed',
   success: 'Action was successful',
+  404: 'Oops, nothing here...',
+  opticalCalculator: 'Optical Calculator',
 
   // Menu
-  home: 'Home',
+  home: 'Home Page',
   transposition: 'Transposition',
   addition: 'Addition',
   near: 'Near',
@@ -16,11 +18,11 @@ export default {
   calculate: 'Calculate',
   spherical: 'Spherical',
   cylindrical: 'Cylindrical',
-  axis: 'Axis',
-  width: 'Width',
-  largeDiagonal: 'Large Diagonal',
-  bridge: 'Bridge',
-  nasoPupillaryDistance: 'Naso-Pupillary Distance',
+  axis: 'Axis (mm)',
+  width: 'Width (mm)',
+  largeDiagonal: 'Large Diagonal (mm)',
+  bridge: 'Bridge (mm)',
+  nasoPupillaryDistance: 'Naso-Pupillary Distance (mm)',
 
 
   // Descrições/Descriptions
@@ -34,23 +36,24 @@ export default {
   diameterDescription: '',
   edgeThicknessDescription: '',
 
-  // Ajuda/Help
-  help: 'Help',
+  // Sobre/About
+  language: 'Language',
+  about: 'About',
   developer: 'Developer',
 
   // Meses/Months
   month: {
     jan: "Jan",
-    feb: "Fev",
+    feb: "Feb",
     mar: "Mar",
-    apr: "Abr",
-    may: "Mai",
+    apr: "Apr",
+    may: "May",
     jun: "Jun",
     jul: "Jul",
-    aug: "Ago",
-    sep: "Set",
-    oct: "Out",
+    aug: "Aug",
+    sep: "Sep",
+    oct: "Oct",
     nov: "Nov",
-    dec: "Dez"
+    dec: "Dec"
   },
 }

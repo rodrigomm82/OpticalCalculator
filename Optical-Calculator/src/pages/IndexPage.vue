@@ -6,7 +6,7 @@
   <section>
     <img class="flex absolute-bottom-right q-pb-md q-pr-md"
          alt="Optical Calculator logo"
-         src="~assets/boy-glasses-blue.png"
+         src="~assets/boy-glasses-grey-blue.png"
          style="max-width: 30vw; max-height: 30vh"
     />
   </section>

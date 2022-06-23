@@ -7,6 +7,13 @@
       <calculation-body :fields="fields"/>
 
       <q-list class="flex flex-center q-pq-md">
+        <img
+          :alt="title"
+          :src="image"
+          class="q-mx-lg"
+          style="max-height:30vh; max-width: 30vw"
+
+        />
         <q-item>
           <q-btn v-if="btnValidity > 0" disable :label="$t('calculate')" color="primary"/>
           <q-btn v-else @click="calculationButton(fields)" :label="$t('calculate')" color="primary"/>
@@ -47,7 +54,8 @@ export default {
   props: {
     title: String,
     description: String,
-    fields: Object
+    fields: Object,
+    image: String
   },
 
   computed: {
