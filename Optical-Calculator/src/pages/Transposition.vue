@@ -4,6 +4,7 @@
     :title="title"
     :description="description"
     :fields="fields"
+    :image="image"
   />
 
 </template>
@@ -25,7 +26,8 @@ export default {
     ],
 
     title: this.$t('transposition'),
-    description: this.$t('transpositionDescription')
+    description: this.$t('transpositionDescription'),
+    image: 'transposition.png'
 
     }
   }

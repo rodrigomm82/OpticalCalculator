@@ -7,9 +7,9 @@
       <calculation-body :fields="fields"/>
 
       <q-list class="flex flex-center q-pq-md">
-        <img
+        <q-img
           :alt="title"
-          :src="image"
+          :src="require('../assets/' + image)"
           class="q-mx-lg"
           style="max-height:30vh; max-width: 30vw"
 
@@ -131,13 +131,13 @@ export default {
   },
 
   setup () {
-    const spherical = ref(0)
-    const cylindrical = ref(0)
+    const spherical = ref()
+    const cylindrical = ref()
     const axis = ref(0)
     const near = ref(0)
     const addition = ref(0)
     const width = ref(0)
-    const largeDiagonal = ref(0)
+    const largeDiagonal = ref()
     const bridge = ref(0)
     const nasoPupillaryDistance = ref(0)
     const diameter = ref(0)

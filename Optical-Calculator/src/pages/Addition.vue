@@ -4,6 +4,7 @@
     :title="title"
     :description="description"
     :fields="fields"
+    :image="image"
   />
 
 </template>
@@ -27,7 +28,8 @@ export default {
       ],
 
       title: this.$t('addition'),
-      description: this.$t('additionDescription')
+      description: this.$t('additionDescription'),
+      image: 'addition.png'
 
     }
   }

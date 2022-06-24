@@ -4,6 +4,7 @@
     :title="title"
     :description="description"
     :fields="fields"
+    :image="image"
   />
 
 </template>
@@ -26,7 +27,8 @@ export default {
       ],
 
       title: this.$t('near'),
-      description: this.$t('nearDescription')
+      description: this.$t('nearDescription'),
+      image: 'near.png'
     }
   }
 }
