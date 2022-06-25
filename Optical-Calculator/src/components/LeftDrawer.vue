@@ -13,6 +13,23 @@
             :to="link.to"
           />
         </q-list>
+      <q-separator inset color="darkgreen" spaced/>
+      <q-list>
+        <q-item
+          clickable target="_blank"
+          href="https://youtu.be/i2PXDsFSacQ"
+        >
+          <q-item-section
+            avatar
+          >
+            <q-icon name="mdi-cast-education" />
+          </q-item-section>
+
+          <q-item-section>
+            <q-item-label>Tutorial</q-item-label>
+          </q-item-section>
+        </q-item>
+      </q-list>
     </div>
   </q-drawer>
 

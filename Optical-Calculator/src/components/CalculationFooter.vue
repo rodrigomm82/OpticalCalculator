@@ -9,7 +9,7 @@
       <q-separator class="orientation-portrait mobile-hide" dark spaced="10px" vertical/>
 
       <q-list v-for="icon in icons" :key="icon.name">
-        <a :href="icon.href">
+        <a :href="icon.href" target="_blank">
           <q-icon size="1.4rem" class="q-px-xs text-white" :name="icon.name"/>
         </a>
       </q-list>
