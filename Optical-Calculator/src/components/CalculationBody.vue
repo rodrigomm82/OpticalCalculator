@@ -16,6 +16,12 @@
         <input v-model="field.ref" :id="field.name" required
                type="number" :name="field.name" class="col-md-8 form-control"
                :min="field.min" :max="field.max" :step="field.step">
+        <q-tooltip class="mobile-hide">
+          Somente de {{ field.min }} à {{ field.max }} e a cada {{ field.step }}
+        </q-tooltip>
+        <q-tooltip class="mobile-only" :hide-delay="delay">
+          Somente de {{ field.min }} à {{ field.max }} e a cada {{ field.step }}
+        </q-tooltip>
         <span class="validity"/>
       </q-item-section>
     </q-item>
@@ -30,6 +36,12 @@ export default {
   props: {
     fields: [Object, String],
     image: [Object, String]
+  },
+
+  data() {
+    return {
+      delay: 1000
+    }
   }
 }
 </script>

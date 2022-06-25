@@ -17,6 +17,7 @@
         <q-item>
           <q-btn v-if="btnValidity > 0" disable :label="$t('calculate')" color="primary"/>
           <q-btn v-else @click="calculationButton(fields)" :label="$t('calculate')" color="primary"/>
+          <q-tooltip :hide-delay="delay">Se algum dos elementos apresentar '✖', não será permitido calcular!</q-tooltip>
         </q-item>
 
         <div v-if="title !== this.$t('transposition')">
@@ -141,9 +142,10 @@ export default {
     const bridge = ref(0)
     const nasoPupillaryDistance = ref(0)
     const diameter = ref(0)
+    const delay= 1000
 
     return {
-      spherical, cylindrical, axis, near, addition ,width, largeDiagonal, bridge, nasoPupillaryDistance, diameter
+      spherical, cylindrical, axis, near, addition ,width, largeDiagonal, bridge, nasoPupillaryDistance, diameter, delay
     }
   }
 }

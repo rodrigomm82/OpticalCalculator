@@ -4,13 +4,18 @@
     <q-header elevated>
       <q-toolbar>
         <q-btn
-          flat
-          dense
-          round
-          icon="menu"
+          dense stack
+          icon="menu" label="Menu"
           aria-label="Menu"
           @click="toggleLeftDrawer"
-          size="20px"
+          size="10px" class="mobile-only"
+        />
+        <q-btn
+          dense flat
+          icon="menu" size="20px"
+          aria-label="Menu"
+          @click="toggleLeftDrawer"
+          class="mobile-hide"
         />
 
         <q-toolbar-title class="mobile-hide">
