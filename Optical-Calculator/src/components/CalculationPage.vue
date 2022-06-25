@@ -8,11 +8,16 @@
 
       <q-list class="flex flex-center q-pq-md">
         <q-img
-          :alt="title"
+          :alt="title" :ratio="4/3"
           :src="require('../assets/' + image)"
-          class="q-mx-lg"
-          style="max-height:30vh; max-width: 30vw"
-
+          class="q-mx-lg mobile-hide"
+          style="max-height:40vh; max-width: 30vw"
+        />
+        <q-img
+          :alt="title" :ratio="4/3"
+          :src="require('../assets/' + image)"
+          class="q-mx-lg mobile-only"
+          style="max-height:80vh; max-width: 60vw"
         />
         <q-item>
           <q-btn v-if="btnValidity > 0" disable :label="$t('calculate')" color="primary"/>
