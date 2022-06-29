@@ -22,7 +22,8 @@
         <q-item>
           <q-btn v-if="btnValidity > 0" disable :label="$t('calculate')" color="primary"/>
           <q-btn v-else @click="calculationButton(fields)" :label="$t('calculate')" color="primary"/>
-          <q-tooltip :hide-delay="delay">Se algum dos elementos apresentar '✖', não será permitido calcular!</q-tooltip>
+          <q-tooltip class="mobile-only" :hide-delay="delay">Se algum dos elementos apresentar '✖', não será permitido calcular!</q-tooltip>
+          <q-tooltip class="mobile-hide">Se algum dos elementos apresentar '✖', não será permitido calcular!</q-tooltip>
         </q-item>
 
         <div v-if="title !== this.$t('transposition')">
