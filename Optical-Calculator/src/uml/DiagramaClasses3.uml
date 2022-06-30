@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JavaScript-modules-diagram</ID>
+  <OriginalElement>C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/pages/IndexPage.vue;C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/pages/Transposition.vue;C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/pages/Addition.vue;C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/pages/ErrorNotFound.vue;C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/pages/Diameter.vue;C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/pages/Near.vue;C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/AboutComponent.vue;C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationResult.vue;C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationLinks.vue;C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationFooter.vue;C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculatorRouterView.vue;C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationHeader.vue;C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationBody.vue;C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/LeftDrawer.vue;C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationPage.vue;</OriginalElement>
+  <nodes>
+    <node x="475.1221945137157" y="185.364089775561">C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/pages/Addition.vue#CalculationPage#157;</node>
+    <node x="144.7680798004988" y="556.5810473815461">C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationBody.vue</node>
+    <node x="247.0" y="699.0">C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationFooter.vue#ref#826;</node>
+    <node x="133.2680798004988" y="446.0">C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationHeader.vue</node>
+    <node x="777.5586034912718" y="699.0">C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationLinks.vue#defineComponent#296;</node>
+    <node x="512.5" y="446.0">C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationPage.vue#CalculationBody#1639;C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationPage.vue#CalculationHeader#1578;C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationPage.vue#CalculationResult#1696;C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationPage.vue#ref#1555;</node>
+    <node x="142.2680798004988" y="501.29052369077306">C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationResult.vue</node>
+    <node x="884.5" y="185.364089775561">C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/pages/Diameter.vue#CalculationPage#155;</node>
+    <node x="636.488778054863" y="846.4713216957606">C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/pages/ErrorNotFound.vue#defineComponent#701;</node>
+    <node x="415.1783042394015" y="839.3491271820449">C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/pages/IndexPage.vue#defineComponent#553;</node>
+    <node x="792.5586034912717" y="568.0">C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/LeftDrawer.vue#CalculationLinks#860;C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/LeftDrawer.vue#defineComponent#825;</node>
+    <node x="287.6396508728179" y="185.364089775561">C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/pages/Near.vue#CalculationPage#157;</node>
+    <node x="672.0" y="185.364089775561">C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/pages/Transposition.vue#CalculationPage#157;</node>
+    <node x="572.0" y="688.0">defineComponent;ref;</node>
+    <node x="640.488778054863" y="962.7518703241898">~assets/boy-glasses-blue-white.png</node>
+    <node x="400.1783042394016" y="962.7518703241898">~assets/boy-glasses-grey-blue.png</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/pages/Near.vue#CalculationPage#157;" target="C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationPage.vue#CalculationBody#1639;C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationPage.vue#CalculationHeader#1578;C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationPage.vue#CalculationResult#1696;C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationPage.vue#ref#1555;" relationship="">
+      <point x="-0.0" y="28.0" />
+      <point x="358.1396508728179" y="375.8547032418957" />
+      <point x="639.1688778054863" y="375.8547032418957" />
+      <point x="0.1688778054863178" y="-59.01364588528679" />
+    </edge>
+    <edge source="C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/pages/Addition.vue#CalculationPage#157;" target="C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationPage.vue#CalculationBody#1639;C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationPage.vue#CalculationHeader#1578;C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationPage.vue#CalculationResult#1696;C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationPage.vue#ref#1555;" relationship="">
+      <point x="-0.0" y="28.0" />
+      <point x="557.1221945137157" y="376.03759600997506" />
+      <point x="639.0" y="376.03759600997506" />
+      <point x="639.0" y="396.5897755610972" />
+      <point x="639.0703241895266" y="396.5897755610972" />
+      <point x="0.07032418952655917" y="-58.49077306733125" />
+    </edge>
+    <edge source="C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationPage.vue#CalculationBody#1639;C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationPage.vue#CalculationHeader#1578;C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationPage.vue#CalculationResult#1696;C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationPage.vue#ref#1555;" target="defineComponent;ref;" relationship="">
+      <point x="0.0" y="61.0" />
+      <point x="0.0" y="-39.0" />
+    </edge>
+    <edge source="C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/LeftDrawer.vue#CalculationLinks#860;C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/LeftDrawer.vue#defineComponent#825;" target="defineComponent;ref;" relationship="">
+      <point x="-111.0" y="0.0" />
+      <point x="717.3336003990024" y="607.0" />
+      <point x="640.0783042394014" y="607.0" />
+      <point x="-0.2774360099748492" y="-24.886930673316783" />
+    </edge>
+    <edge source="C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/LeftDrawer.vue#CalculationLinks#860;C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/LeftDrawer.vue#defineComponent#825;" target="C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationLinks.vue#defineComponent#296;" relationship="">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/pages/Diameter.vue#CalculationPage#155;" target="C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationPage.vue#CalculationBody#1639;C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationPage.vue#CalculationHeader#1578;C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationPage.vue#CalculationResult#1696;C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationPage.vue#ref#1555;" relationship="">
+      <point x="-84.5" y="0.0" />
+      <point x="952.4468827930178" y="213.364089775561" />
+      <point x="952.4468827930178" y="375.33376558603527" />
+      <point x="638.6479401496259" y="375.33376558603527" />
+      <point x="-0.3520598503740757" y="-57.97177057356612" />
+    </edge>
+    <edge source="C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationPage.vue#CalculationBody#1639;C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationPage.vue#CalculationHeader#1578;C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationPage.vue#CalculationResult#1696;C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationPage.vue#ref#1555;" target="C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationHeader.vue" relationship="">
+      <point x="-116.87930174563576" y="9.913216957605982" />
+      <point x="502.7600997506236" y="516.913216957606" />
+      <point x="502.7600997506236" y="516.790523690773" />
+      <point x="477.8319800498757" y="516.790523690773" />
+      <point x="477.8319800498757" y="468.9815461346635" />
+      <point x="388.77605985037445" y="468.9815461346635" />
+      <point x="122.00798004987564" y="-1.5743142144634703" />
+    </edge>
+    <edge source="C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/pages/ErrorNotFound.vue#defineComponent#701;" target="defineComponent;ref;" relationship="">
+      <point x="0.0" y="-28.0" />
+      <point x="739.488778054863" y="802.6745635910224" />
+      <point x="633.6339152119701" y="802.6745635910224" />
+      <point x="-4.945037406483607" y="10.12007980049873" />
+    </edge>
+    <edge source="C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationPage.vue#CalculationBody#1639;C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationPage.vue#CalculationHeader#1578;C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationPage.vue#CalculationResult#1696;C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationPage.vue#ref#1555;" target="C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationResult.vue" relationship="">
+      <point x="-88.4578553615961" y="10.60997506234412" />
+      <point x="437.02044887780556" y="516.7905236907729" />
+      <point x="341.5428927680802" y="516.790523690773" />
+      <point x="70.2748129675814" y="10.287281795511603" />
+    </edge>
+    <edge source="C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationFooter.vue#ref#826;" target="defineComponent;ref;" relationship="">
+      <point x="132.0" y="0.0" />
+      <point x="-67.0" y="0.0" />
+    </edge>
+    <edge source="C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationLinks.vue#defineComponent#296;" target="defineComponent;ref;" relationship="">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationPage.vue#CalculationBody#1639;C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationPage.vue#CalculationHeader#1578;C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationPage.vue#CalculationResult#1696;C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationPage.vue#ref#1555;" target="C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationBody.vue" relationship="">
+      <point x="-122.5770573566084" y="9.913216957605982" />
+      <point x="479.0" y="516.913216957606" />
+      <point x="479.0" y="572.0810473815461" />
+      <point x="126.5" y="0.0" />
+    </edge>
+    <edge source="C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/pages/ErrorNotFound.vue#defineComponent#701;" target="~assets/boy-glasses-blue-white.png" relationship="">
+      <point x="-103.0" y="0.0" />
+      <point x="730.7219451371573" y="874.4713216957606" />
+      <point x="730.7219451371573" y="965.3770573566088" />
+      <point x="-4.777556109725538" y="-12.874812967580965" />
+    </edge>
+    <edge source="C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/pages/Transposition.vue#CalculationPage#157;" target="C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationPage.vue#CalculationBody#1639;C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationPage.vue#CalculationHeader#1578;C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationPage.vue#CalculationResult#1696;C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationPage.vue#ref#1555;" relationship="">
+      <point x="-0.0" y="28.0" />
+      <point x="770.0" y="375.8547032418957" />
+      <point x="639.1688778054863" y="375.8547032418957" />
+      <point x="0.1688778054863178" y="-57.97177057356612" />
+    </edge>
+    <edge source="C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/pages/IndexPage.vue#defineComponent#553;" target="~assets/boy-glasses-grey-blue.png" relationship="">
+      <point x="-88.5" y="0.0" />
+      <point x="496.1783042394016" y="867.3491271820449" />
+      <point x="496.1783042394016" y="984.1982543640897" />
+      <point x="96.0" y="0.0" />
+    </edge>
+    <edge source="C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/pages/IndexPage.vue#defineComponent#553;" target="defineComponent;ref;" relationship="">
+      <point x="-5.0" y="-28.0" />
+      <point x="498.6783042394015" y="802.6745635910224" />
+      <point x="634.0" y="802.6745635910224" />
+      <point x="-5.611837605984874" y="16.788081795511175" />
+    </edge>
+  </edges>
+  <settings layout="Channel" zoom="1.5" showDependencies="false" x="802.3333333333334" y="524.6666666666667" />
+  <SelectedNodes>
+    <node>C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationPage.vue#CalculationBody#1639;C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationPage.vue#CalculationHeader#1578;C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationPage.vue#CalculationResult#1696;C:/Users/RodrigoMaciel/Documents/Nova pasta (2)/Projeto TCC/Aplicação TCC/OpticalCalculator/Optical-Calculator/src/components/CalculationPage.vue#ref#1555;</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>All</Category>
+  </Categories>
+  <VISIBILITY>Overview</VISIBILITY>
+</Diagram>
+

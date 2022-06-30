@@ -59,10 +59,10 @@ export default {
   },
 
   props: {
-    title: String,
-    description: String,
-    fields: Object,
-    image: String
+      title: String,
+      description: String,
+      fields: Object,
+      image: String
   },
 
   computed: {

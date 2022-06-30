@@ -87,7 +87,7 @@ module.exports = configure(function (ctx) {
     framework: {
       config: {},
       /*lang: 'pt-BR',*/
-      // iconSet: 'material-icons', // Quasar icon set
+      iconSet: 'material-icons', // Quasar icon set
       // lang: 'en-US', // Quasar language pack
 
       // For special cases outside of where the auto-import strategy can have an impact
@@ -142,7 +142,7 @@ module.exports = configure(function (ctx) {
       manifest: {
         name: `Optical Calculator`,
         short_name: `Optical Calculator`,
-        description: `Facilitator calculator for the day to day of an optical store`,
+        description: `Calculadora facilitadora para o dia a dia de uma óptica`,
         display: 'standalone',
         orientation: 'portrait',
         background_color: '#ffffff',

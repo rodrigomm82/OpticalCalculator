@@ -1,13 +1,16 @@
 {
   "name": "optical-calculator",
   "version": "0.0.1",
-  "description": "Facilitator calculator for the day to day of an optical store",
+  "description": "Calculadora facilitadora para o dia a dia de uma ótica",
   "productName": "Optical Calculator",
   "author": "Rodrigo M Moreira <rodrigo.mm82@hotmail.com>",
   "private": true,
   "scripts": {
     "dev": "quasar dev",
-    "build": "quasar build"
+    "dev:pwa": "quasar dev -m pwa",
+    "build": "quasar build",
+    "build:pwa": "quasar build -m pwa",
+    "install": "npm install"
   },
   "dependencies": {
     "vue-i18n": "^9.0.0",
