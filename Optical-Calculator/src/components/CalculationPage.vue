@@ -10,14 +10,12 @@
         <q-img
           :alt="title" :ratio="4/3"
           :src="require('../assets/' + image)"
-          class="q-mx-lg mobile-hide"
-          style="max-height:40vh; max-width: 30vw"
+          class="image-web q-mx-lg mobile-hide"
         />
         <q-img
           :alt="title" :ratio="4/3"
           :src="require('../assets/' + image)"
-          class="q-mx-lg mobile-only"
-          style="max-height:80vh; max-width: 60vw"
+          class="image-mobile q-mx-lg mobile-only"
         />
         <q-item>
           <q-btn v-if="btnValidity > 0" disable :label="$t('calculate')" color="primary"/>
@@ -47,8 +45,9 @@ import {ref} from 'vue'
 import CalculationHeader from 'components/CalculationHeader'
 import CalculationBody from 'components/CalculationBody'
 import CalculationResult from 'components/CalculationResult'
+import DateMixin from 'src/mixins/DateMixin'
+import LogMixin from 'src/mixins/LogMixin'
 
-let tolerance = 2;
 export default {
   name: "CalculationPage",
 
@@ -58,6 +57,8 @@ export default {
     CalculationHeader,
   },
 
+  mixins: [DateMixin, LogMixin],
+
   props: {
       title: String,
       description: String,
@@ -66,6 +67,7 @@ export default {
   },
 
   computed: {
+    // Método que valida constantemente o botão que aciona os cálculos
     btnValidity: function () {
       let count = 0
       this.fields.forEach(function (f) {
@@ -76,36 +78,47 @@ export default {
   },
 
   methods: {
+    // Função acionada pelo botão
     calculationButton: function (field) {
       this.parameterReceipt(field)
-
       if (this.title === this.$t('transposition')) this.transpositionCalculate(field)
       if (this.title === this.$t('addition')) this.additionCalculate()
       if (this.title === this.$t('near')) this.nearCalculate()
       if (this.title === this.$t('diameter')) this.diameterCalculate()
     },
 
+    // função que verifica se é necessário calcular a transposição
     transpositionCalculate: function(field) {
       if (this.cylindrical > 0) {
-        this.calculationOfTransposition()
-        this.sendingParameter(field)
+        console.log(this.formatMoment() + ' => Cálculo de Transposição:{' +
+        this.transpositionLog('Prescrito:', field) +
+        this.calculationOfTransposition() +
+        this.parameterSending(field) +
+        this.transpositionLog(', Transposto:', field) + '}');
       }
     },
 
+    // Cálculo da adição
     additionCalculate() {
       this.addition = (this.near - this.spherical)
+      console.log(this.formatMoment() + ' => Cálculo de Adição:' + this.additionLog())
     },
 
+    // Cálculo da dioptria de perto
     nearCalculate: function () {
       this.near = (this.addition + this.spherical)
+      console.log(this.formatMoment() + ' => Cálculo de Perto:' + this.nearLog())
     },
 
+    // Cálculo de diâmetro da lente
     diameterCalculate: function () {
+      let tolerance = 2;
       this.diameter = (((this.bridge + this.width + this.largeDiagonal)
         - (this.nasoPupillaryDistance * 2)) + tolerance)
-      console.log(this.$t('diameter') + ' ' + this.diameter)
+      console.log(this.formatMoment() + ' => Cálculo de Diâmetro:' + this.diameterLog())
     },
 
+    // Recebimento de parâmetros da função
     parameterReceipt: function (field) {
       if(this.title !== this.$t('diameter')){
         this.spherical = field[0].ref.valueOf()
@@ -122,19 +135,24 @@ export default {
       }
     },
 
-    sendingParameter: function (field) {
+    // Envio de parâmetros para função
+    parameterSending: function (field) {
       field[0].ref = this.spherical
       field[1].ref = this.cylindrical
       field[2].ref = this.axis
+      return ''
     },
 
+    // Cálculo da transposição de dioptrias, caso o cilíndrico for positivo
     calculationOfTransposition: function () {
       this.spherical += this.cylindrical
       this.cylindrical *= -1
 
       if (this.axis >= 90) this.axis -= 90
       else this.axis += 90
+      return ''
     },
+
   },
 
   setup () {
@@ -158,5 +176,7 @@ export default {
 </script>
 
 <style scoped>
+.image-web {max-height:40vh; max-width: 30vw;}
+.image-mobile {max-height:80vh; max-width: 60vw;}
 
 </style>
