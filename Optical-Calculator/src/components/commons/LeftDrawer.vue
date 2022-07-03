@@ -37,7 +37,7 @@
 
 <script>
 import {defineComponent} from 'vue'
-import CalculationLinks from 'components/CalculationLinks.vue'
+import CalculationLinks from 'components/commons/CalculationLinks.vue'
 
 export default defineComponent( {
   name: "LeftDrawer",

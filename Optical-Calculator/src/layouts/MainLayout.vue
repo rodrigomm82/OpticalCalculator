@@ -57,10 +57,10 @@
 
 <script>
 import { defineComponent, ref } from 'vue'
-import LeftDrawer from "components/LeftDrawer";
+import LeftDrawer from "components/commons/LeftDrawer";
 import {useI18n} from "vue-i18n";
-import CalculationFooter from "components/CalculationFooter";
-import CalculatorRouterView from "components/CalculatorRouterView";
+import CalculationFooter from "components/commons/CalculationFooter";
+import CalculatorRouterView from "components/commons/CalculatorRouterView";
 
 const zeroFill = n => {
   return ('0' + n).slice(-2);
