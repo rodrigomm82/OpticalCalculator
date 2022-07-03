@@ -35,5 +35,15 @@ export default {
         + this.$t('near').toUpperCase() + ': ' + this.near.toFixed(2) + '}')
     },
 
+    // Geração de tooltip para campos de editáveis
+    showTooltipField: function (field) {
+      return 'Somente de ' + field.min + ' à ' + field.max + ' e a cada ' + field.step
+    },
+
+    // Geração de tooltip para botão
+    showTooltipButton: function () {
+      return 'Se algum dos elementos apresentar \'✖\', não será permitido calcular!'
+    }
+
   }
 }

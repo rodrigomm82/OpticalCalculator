@@ -21,10 +21,10 @@
                    type="number" :name="field.name" class="col-md-8 form-control"
                    :min="field.min" :max="field.max" :step="field.step">
             <q-tooltip class="mobile-hide">
-              Somente de {{ field.min }} à {{ field.max }} e a cada {{ field.step }}
+              {{ this.showTooltipField(field) }}
             </q-tooltip>
             <q-tooltip class="mobile-only" :hide-delay="delay">
-              Somente de {{ field.min }} à {{ field.max }} e a cada {{ field.step }}
+              {{ this.showTooltipField(field) }}
             </q-tooltip>
             <span class="validity"/>
           </q-item-section>
@@ -47,10 +47,10 @@
         <q-btn v-if="btnValidity > 0" disable :label="$t('calculate')" color="primary"/>
         <q-btn v-else @click="calculationButton(fields, title)" :label="$t('calculate')" color="primary"/>
         <q-tooltip class="mobile-only" :hide-delay="delay">
-          Se algum dos elementos apresentar '✖', não será permitido calcular!
+          {{ this.showTooltipButton() }}
         </q-tooltip>
         <q-tooltip class="mobile-hide">
-          Se algum dos elementos apresentar '✖', não será permitido calcular!
+          {{ this.showTooltipButton() }}
         </q-tooltip>
       </q-item>
 
@@ -125,7 +125,7 @@ export default {
       if (this.title === this.$t('addition')) this.additionCalculate()
       if (this.title === this.$t('near')) this.nearCalculate()
       if (this.title === this.$t('diameter')) this.diameterCalculate()
-    },
+    }
   }
 }
 </script>
