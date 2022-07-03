@@ -1,5 +1,4 @@
 <template>
-<!--  <q-layout view="lHh Lpr lFf">-->
   <q-layout view="hHh lpR fFf">
     <q-header elevated>
       <q-toolbar>
@@ -59,7 +58,6 @@
 <script>
 import { defineComponent, ref } from 'vue'
 import LeftDrawer from "components/LeftDrawer";
-import AboutComponent from "components/AboutComponent";
 import {useI18n} from "vue-i18n";
 import CalculationFooter from "components/CalculationFooter";
 import CalculatorRouterView from "components/CalculatorRouterView";
@@ -82,8 +80,6 @@ export default defineComponent({
   components: {
     CalculatorRouterView,
     CalculationFooter,
-    AboutComponent,
-    HelpComponent: AboutComponent,
     LeftDrawer,
   },
 
