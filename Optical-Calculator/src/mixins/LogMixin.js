@@ -1,7 +1,6 @@
 export default {
+  // Classe responsável pela geração de logs
   methods: {
-    // Classe responsável pela geração de logs
-
     // Log de cálculo de transposição
     transpositionLog: function (label) {
       return (label + '{' + this.$t('spherical') + ': ' + this.spherical.toFixed(2) + ', '
@@ -34,6 +33,7 @@ export default {
         + this.$t('axis') + ': ' + this.axis + '°, '
         + this.$t('addition') + ': ' + this.addition.toFixed(2) + ', '
         + this.$t('near').toUpperCase() + ': ' + this.near.toFixed(2) + '}')
-    }
+    },
+
   }
 }

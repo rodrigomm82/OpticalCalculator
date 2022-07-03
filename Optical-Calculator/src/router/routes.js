@@ -5,6 +5,7 @@ import Near from "pages/Near";
 import Transposition from "pages/Transposition";
 import MainLayout from "layouts/MainLayout";
 import IndexPage from "pages/IndexPage";
+import ErrorNotFound from "pages/ErrorNotFound";
 
 const routes = [
   {
@@ -46,8 +47,7 @@ const routes = [
   // but you can also remove it
   {
     path: '/:catchAll(.*)*',
-    component: () => import('pages/ErrorNotFound.vue')
+    component: ErrorNotFound
   }
 ]
-
 export default routes

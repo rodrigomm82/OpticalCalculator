@@ -1,5 +1,4 @@
 <template>
-
   <q-page  class="">
     <q-page-container  class="q-pa-md">
       <p class="text-italic" style="color: #1976d2; text-align: justify">{{ this.content }}</p>
@@ -12,7 +11,6 @@
            style="max-width: 30vw; max-height: 30vh"
       />
     </q-page-container>
-
   </q-page>
 </template>
 

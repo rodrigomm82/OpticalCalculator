@@ -28,36 +28,6 @@
           {{ this.$t('opticalCalculator') }}
         </q-toolbar-title>
 
-<!--        <q-select
-          v-model="locale"
-          :options="localeOptions"
-          :label="$t('language')"
-          bottom-slots
-          dense borderless
-          options-dense
-          emit-value
-          map-options
-          transition-show="jump-up"
-          transition-hide="jump-up"
-          color="primary"
-          class="q-py-sm"
-        >
-          <template v-slot:prepend>
-            <q-icon class="text-white" color="white" name="mdi-translate" @click.stop size="12"/>
-          </template>
-
-          <template v-slot:option="scope">
-            <q-item v-bind="scope.itemProps">
-              <q-item-section avatar>
-                <q-icon :name="scope.opt.icon" size="25px"/>
-              </q-item-section>
-              <q-item-section>
-                <q-item-label v-html="scope.opt.label"/>
-              </q-item-section>
-            </q-item>
-          </template>
-        </q-select>-->
-
         <q-separator vertical inset class="q-mx-sm mobile-hide"/>
 
         <q-card class="mobile-hide" borderless flat style="background-color: #1976d2">

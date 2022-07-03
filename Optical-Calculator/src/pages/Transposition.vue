@@ -1,12 +1,10 @@
 <template>
-
   <calculation-page
     :title="title"
     :description="description"
     :fields="fields"
     :image="image"
   />
-
 </template>
 
 <script>
@@ -28,11 +26,9 @@ export default {
     title: this.$t('transposition'),
     description: this.$t('transpositionDescription'),
     image: 'transposition.png'
-
     }
   }
 }
 </script>
 
-<style scoped>
-</style>
+<style scoped/>
