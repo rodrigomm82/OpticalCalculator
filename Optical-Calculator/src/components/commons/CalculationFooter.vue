@@ -28,6 +28,7 @@ export default {
       {name:'mdi-facebook', href:'https://www.facebook.com/rodrigommoreira82'},
       {name:'mdi-linkedin', href:'https://www.linkedin.com/in/rodrigomm82'},
       {name:'mdi-email', href:'mailto:rodrigo.mm82@hotmail.com'},
+      {name:'mdi-twitter', href:'https://twitter.com/ti_rodrigomm'},
     ])
     return { icons }
   }

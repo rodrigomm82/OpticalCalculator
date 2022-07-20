@@ -14,19 +14,22 @@
           />
         </q-list>
       <q-separator inset color="darkgreen" spaced/>
-      <q-list>
+      <q-list
+        v-for="link in extrasLinks"
+        :key="link"
+      >
         <q-item
           clickable target="_blank"
-          href="https://youtu.be/i2PXDsFSacQ"
+          :href="link.href"
         >
           <q-item-section
             avatar
           >
-            <q-icon name="mdi-cast-education" />
+            <q-icon :name="link.icon" />
           </q-item-section>
 
           <q-item-section>
-            <q-item-label>Tutorial</q-item-label>
+            <q-item-label>{{ link.title }}</q-item-label>
           </q-item-section>
         </q-item>
       </q-list>
@@ -79,6 +82,18 @@ export default defineComponent( {
           icon: 'mdi-glasses',
           to: '/calculation/edge-thickness'
         },*/
+      ],
+      extrasLinks: [
+        {
+          href: 'https://youtu.be/i2PXDsFSacQ',
+          title: 'Tutorial',
+          icon: 'mdi-cast-education'
+        },
+        {
+          href: 'https://forms.office.com/r/JBK7zzKFx6',
+          title: 'Pesquisa',
+          icon: 'mdi-feature-search-outline'
+        }
       ]
     }
   },
