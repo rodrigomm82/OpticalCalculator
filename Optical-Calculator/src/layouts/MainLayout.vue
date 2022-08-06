@@ -4,11 +4,15 @@
       <q-toolbar>
         <q-btn
           dense stack
-          icon="menu" label="Menu"
           aria-label="Menu"
           @click="toggleLeftDrawer"
           size="10px" class="mobile-only"
-        />
+        >
+          <q-icon size="26px" name="menu"/>
+          <div style="font-size: 6pt; height: 2vh">
+            Menu
+          </div>
+        </q-btn>
         <q-btn
           dense flat
           icon="menu" size="20px"
@@ -102,3 +106,8 @@ export default defineComponent({
 
 })
 </script>
+<style type="text/css">
+#button_menu {
+  font-size: 20pt;
+}
+</style>
