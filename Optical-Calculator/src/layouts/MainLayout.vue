@@ -72,7 +72,7 @@ const zeroFill = n => {
 
 const interval = setInterval(() => {
   const now = new Date();
-  document.getElementById('time').innerHTML = zeroFill(now.getUTCDate()) + '/' + zeroFill((now.getMonth()
+  document.getElementById('time').innerHTML = zeroFill(now.getDate()) + '/' + zeroFill((now.getMonth()
       + 1)) + '/' + now.getFullYear();
   document.getElementById('hour').innerHTML = zeroFill(now.getHours()) + ':' + zeroFill(now.getMinutes()) + ':' +
     zeroFill(now.getSeconds());

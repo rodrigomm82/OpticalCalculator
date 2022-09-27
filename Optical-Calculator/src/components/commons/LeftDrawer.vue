@@ -14,24 +14,13 @@
           />
         </q-list>
       <q-separator inset color="darkgreen" spaced/>
-      <q-list
-        v-for="link in extrasLinks"
-        :key="link"
-      >
-        <q-item
-          clickable target="_blank"
-          :href="link.href"
-        >
-          <q-item-section
-            avatar
-          >
-            <q-icon :name="link.icon" />
-          </q-item-section>
-
-          <q-item-section>
-            <q-item-label>{{ link.title }}</q-item-label>
-          </q-item-section>
-        </q-item>
+      <q-list >
+        <calculation-links
+          v-for="link in extrasLinks"
+          :key="link.title"
+          v-bind="link"
+          :to="link.href"
+        />
       </q-list>
     </div>
   </q-drawer>
